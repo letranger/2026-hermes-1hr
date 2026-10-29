@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-10-24 六 16:50 -->
+<!-- 2026-10-29 四 11:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>龍蝦養殖實務研習手冊</title>
@@ -234,9 +234,9 @@
 <br />
 <span class="subtitle">中小學 AI 教育探索者南區社群 第 4 次共學</span>
 </h1>
-<div id="outline-container-orgd9767e8" class="outline-2">
-<h2 id="orgd9767e8">基本資訊</h2>
-<div class="outline-text-2" id="text-orgd9767e8">
+<div id="outline-container-orgcf75845" class="outline-2">
+<h2 id="orgcf75845">基本資訊</h2>
+<div class="outline-text-2" id="text-orgcf75845">
 <ul class="org-ul">
 <li>時間 : 2026-10-31（六）11:00–12:00</li>
 <li>地點 : 台南一中綜合大樓 403 室</li>
@@ -247,13 +247,13 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org1df1f5e" class="outline-2">
-<h2 id="org1df1f5e">課前準備</h2>
-<div class="outline-text-2" id="text-org1df1f5e">
+<div id="outline-container-org07a08d1" class="outline-2">
+<h2 id="org07a08d1">課前準備</h2>
+<div class="outline-text-2" id="text-org07a08d1">
 </div>
-<div id="outline-container-org783a414" class="outline-3">
-<h3 id="org783a414">學員要在 10/28（三）以前做好的事</h3>
-<div class="outline-text-3" id="text-org783a414">
+<div id="outline-container-orgefe03b1" class="outline-3">
+<h3 id="orgefe03b1">學員要在 10/28（三）以前做好的事</h3>
+<div class="outline-text-3" id="text-orgefe03b1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> 看安裝影片（<a href="https://youtu.be/hZUf81GGjiA">設定 ChatGPT</a>、<a href="https://youtu.be/junAjFtTQAI">Windows</a>、<a href="https://youtu.be/czTL30xN5l4">Mac</a>），照<a href="https://letranger.github.io/2026-hermes-1hr/">課前安裝說明</a>裝好 Hermes 並登入 ChatGPT</li>
 <li class="off"><code>[&#xa0;]</code> 下載 <a href="https://letranger.github.io/2026-hermes-1hr/%E7%A0%94%E7%BF%92.zip">研習.zip</a> 解壓到桌面，得到「研習」資料夾和四個素材檔（或手動建資料夾逐一下載）</li>
@@ -262,15 +262,15 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org648685e" class="outline-2">
-<h2 id="org648685e">單元內容</h2>
-<div class="outline-text-2" id="text-org648685e">
+<div id="outline-container-orge167f93" class="outline-2">
+<h2 id="orge167f93">單元內容</h2>
+<div class="outline-text-2" id="text-orge167f93">
 </div>
-<div id="outline-container-orgb266fd1" class="outline-3">
-<h3 id="orgb266fd1">1. AI Agent 是什麼、為什麼是 Hermes</h3>
-<div class="outline-text-3" id="text-orgb266fd1">
+<div id="outline-container-org5f9e236" class="outline-3">
+<h3 id="org5f9e236">1. AI Agent 是什麼、為什麼是 Hermes</h3>
+<div class="outline-text-3" id="text-org5f9e236">
 
-<div id="org65176d6" class="figure">
+<div id="org78d974a" class="figure">
 <p><img src="img/agent-vs-chat.svg" alt="agent-vs-chat.svg" class="org-svg" width="100%" style="max-width:960px" />
 </p>
 <p><span class="figure-number">Figure 1: </span>直接用 ChatGPT 和用 Hermes 的差別</p>
@@ -314,7 +314,7 @@ Why Hermes
 
 <tr>
 <td class="org-left">安裝</td>
-<td class="org-left">桌面版一個安裝檔，Mac／Windows 都有</td>
+<td class="org-left">桌面版一個安裝檔，Mac／Windows 都有；底層是 Python</td>
 <td class="org-left">桌面版 Mac／Windows 都有，也可用安裝腳本；底層是 Node.js</td>
 </tr>
 
@@ -338,8 +338,8 @@ Why Hermes
 
 <tr>
 <td class="org-left">記憶</td>
-<td class="org-left">存在本機資料庫，可全文搜尋</td>
-<td class="org-left">存成本機檔案</td>
+<td class="org-left">兩個文字檔（MEMORY.md、USER.md），每次對話整份帶上；對話紀錄另存 SQLite 可全文搜尋</td>
+<td class="org-left">文字檔（MEMORY.md＋每日筆記），另建 SQLite 索引做向量＋關鍵字搜尋</td>
 </tr>
 
 <tr>
@@ -362,13 +362,13 @@ Why Hermes
 </ul>
 </div>
 </div>
-<div id="outline-container-org334a5b7" class="outline-3">
-<h3 id="org334a5b7">2. 模型與工具</h3>
-<div class="outline-text-3" id="text-org334a5b7">
+<div id="outline-container-orgc195b66" class="outline-3">
+<h3 id="orgc195b66">2. 模型與工具</h3>
+<div class="outline-text-3" id="text-orgc195b66">
 </div>
-<div id="outline-container-org8fc3183" class="outline-4">
-<h4 id="org8fc3183">[實作]</h4>
-<div class="outline-text-4" id="text-org8fc3183">
+<div id="outline-container-org9409c60" class="outline-4">
+<h4 id="org9409c60">[實作]</h4>
+<div class="outline-text-4" id="text-org9409c60">
 <ul class="org-ul">
 <li>輸入 <code>/model</code>，確認接的是 ChatGPT；看一眼清單裡有哪幾個模型，不用選，關掉。</li>
 <li>輸入 <code>/tools</code>，看一眼它能用的工具，關掉。</li>
@@ -376,11 +376,11 @@ Why Hermes
 </ul>
 </div>
 </div>
-<div id="outline-container-org257227d" class="outline-4">
-<h4 id="org257227d">[解說]剛才看到的是什麼</h4>
-<div class="outline-text-4" id="text-org257227d">
+<div id="outline-container-orgc1511c0" class="outline-4">
+<h4 id="orgc1511c0">[解說]剛才看到的是什麼</h4>
+<div class="outline-text-4" id="text-orgc1511c0">
 
-<div id="org1221bda" class="figure">
+<div id="orge61056c" class="figure">
 <p><img src="img/models-in-agent.svg" alt="models-in-agent.svg" class="org-svg" width="100%" style="max-width:960px" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Hermes vs. 模型</p>
@@ -442,13 +442,13 @@ Why Hermes
 </div>
 </div>
 </div>
-<div id="outline-container-org407f69f" class="outline-3">
-<h3 id="org407f69f">3. 動手做事</h3>
-<div class="outline-text-3" id="text-org407f69f">
+<div id="outline-container-orgc302f15" class="outline-3">
+<h3 id="orgc302f15">3. 動手做事</h3>
+<div class="outline-text-3" id="text-orgc302f15">
 </div>
-<div id="outline-container-org3daafbf" class="outline-4">
-<h4 id="org3daafbf">[實作]</h4>
-<div class="outline-text-4" id="text-org3daafbf">
+<div id="outline-container-orge85d073" class="outline-4">
+<h4 id="orge85d073">[實作]</h4>
+<div class="outline-text-4" id="text-orge85d073">
 <ol class="org-ol">
 <li><p>
 建立檔案（每個人做）
@@ -482,9 +482,9 @@ Why Hermes
 </ol>
 </div>
 </div>
-<div id="outline-container-orgdb106d8" class="outline-4">
-<h4 id="orgdb106d8">[解說]剛才它做了什麼</h4>
-<div class="outline-text-4" id="text-orgdb106d8">
+<div id="outline-container-orgd785069" class="outline-4">
+<h4 id="orgd785069">[解說]剛才它做了什麼</h4>
+<div class="outline-text-4" id="text-orgd785069">
 <ul class="org-ul">
 <li>建檔那兩句：模型看了你的話，決定用「寫檔」和「列目錄」兩個工具，Hermes 去執行，結果回給模型，模型再回你。這就是第 1 單元圖的 ②。</li>
 <li>段考分析：它先讀檔、發現資料有幾十筆、自己寫一段程式算、再整理成文字。一輪一輪直到做完，就是 agent loop。</li>
@@ -495,13 +495,13 @@ Why Hermes
 </div>
 </div>
 </div>
-<div id="outline-container-org198cd11" class="outline-3">
-<h3 id="org198cd11">4. 靈魂與記憶</h3>
-<div class="outline-text-3" id="text-org198cd11">
+<div id="outline-container-org1d687b8" class="outline-3">
+<h3 id="org1d687b8">4. 靈魂與記憶</h3>
+<div class="outline-text-3" id="text-org1d687b8">
 </div>
-<div id="outline-container-orga79f3b0" class="outline-4">
-<h4 id="orga79f3b0">[實作]</h4>
-<div class="outline-text-4" id="text-orga79f3b0">
+<div id="outline-container-orgc0acdd0" class="outline-4">
+<h4 id="orgc0acdd0">[實作]</h4>
+<div class="outline-text-4" id="text-orgc0acdd0">
 <ol class="org-ol">
 <li><p>
 請它記住你（每個人做）
@@ -538,11 +538,11 @@ Why Hermes
 </ol>
 </div>
 </div>
-<div id="outline-container-orge63c7fe" class="outline-4">
-<h4 id="orge63c7fe">[解說]剛才改的是 Hermes 的哪個部分</h4>
-<div class="outline-text-4" id="text-orge63c7fe">
+<div id="outline-container-org4db8f53" class="outline-4">
+<h4 id="org4db8f53">[解說]剛才改的是 Hermes 的哪個部分</h4>
+<div class="outline-text-4" id="text-org4db8f53">
 
-<div id="org0a85c63" class="figure">
+<div id="org8bdfe32" class="figure">
 <p><img src="img/hermes-structure.svg" alt="hermes-structure.svg" class="org-svg" width="100%" style="max-width:960px" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Hermes架構</p>
@@ -589,7 +589,17 @@ SOUL.md 是一個真的檔案，放在 Hermes 的家目錄：
 <ul class="org-ul">
 <li>Mac 的資料夾名稱開頭是點，預設隱藏，所以用「前往資料夾」最快。Windows 的 AppData 也是隱藏資料夾，所以直接貼路徑。</li>
 <li>兩邊名稱不一樣：Mac 是家目錄下的 <code>.hermes</code>，Windows 是 AppData\Local 下的 <code>hermes</code> （沒有點）。Windows 沒有 <code>C:\Users\你的帳號\.hermes</code> 這個資料夾。</li>
-<li>兩種改法，效果一樣：剛才那樣請 Hermes 改，或自己用文字編輯器打開改。</li>
+<li>兩種改法，效果一樣：請 Hermes 改，或自己用文字編輯器打開改。</li>
+<li><p>
+請 Hermes 改不一定要準備範本檔，直接用講的也行，例如：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請把你的 SOUL.md 改成以下內容：你是高中老師的教學助理，回答先講結論，條列不超過五點，口氣像同事。
+</code></code></pre>
+</div>
+<p>
+要加一條、刪一條也一樣用講的。句子裡要明講「SOUL.md」：只說「你以後是高中老師的教學助理」，它會當成一般對話指令，可能只在這個對話照做，或是存進記憶而不是 SOUL.md。研習用範本檔，是為了大家貼同一份、結果一致，方便對照前後差異。
+</p></li>
 <li>改完要 <code>/new</code> 開新對話才生效，因為它是在每次對話開始時讀進去的。檔案留空或刪掉，Hermes 會退回內建的預設個性。</li>
 <li>記憶不是這樣改的：記憶由 Hermes 自己管理，要改就直接對它說「請忘掉…」或「請改成…」。</li>
 </ul></li>
@@ -653,13 +663,13 @@ SOUL.md 是一個真的檔案，放在 Hermes 的家目錄：
 </div>
 </div>
 </div>
-<div id="outline-container-org98cce3b" class="outline-3">
-<h3 id="org98cce3b">5. 接 Gmail、讀信、寄信、設排程</h3>
-<div class="outline-text-3" id="text-org98cce3b">
+<div id="outline-container-orge50f7c8" class="outline-3">
+<h3 id="orge50f7c8">5. 接 Gmail、讀信、寄信、設排程</h3>
+<div class="outline-text-3" id="text-orge50f7c8">
 </div>
-<div id="outline-container-org8075075" class="outline-4">
-<h4 id="org8075075">[實作]</h4>
-<div class="outline-text-4" id="text-org8075075">
+<div id="outline-container-org22786ba" class="outline-4">
+<h4 id="org22786ba">[實作]</h4>
+<div class="outline-text-4" id="text-org22786ba">
 <ol class="org-ol">
 <li><p>
 裝 himalaya、接上信箱（每個人做）
@@ -725,7 +735,7 @@ SOUL.md 是一個真的檔案，放在 Hermes 的家目錄：
 <li><p>
 先寄：用手機或網頁 Gmail 寄給同伴，主旨和內容照下面抄，把名字和日期改一改。
 </p>
-<pre class="example" id="orgf300766">
+<pre class="example" id="org36373b3">
 主旨：邀請擔任 12/19 AI 探索者南區社群共學講師
 
 ○○老師您好：
@@ -759,9 +769,9 @@ AI 探索者南區社群第 6 次共學預計 12 月 19 日（六）上午 10 �
 </ol>
 </div>
 </div>
-<div id="outline-container-orga8a1877" class="outline-4">
-<h4 id="orga8a1877">[解說]剛才五步各是什麼</h4>
-<div class="outline-text-4" id="text-orga8a1877">
+<div id="outline-container-orgbe7c603" class="outline-4">
+<h4 id="orgbe7c603">[解說]剛才五步各是什麼</h4>
+<div class="outline-text-4" id="text-orgbe7c603">
 <p>
 Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 himalaya、設定檔長什麼樣、Gmail 的資料夾別名怎麼寫。
 </p>
@@ -770,7 +780,7 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 真正動手的是 terminal 這個 tool：執行安裝指令、寫 config.toml、跑 himalaya envelope list 去連 Gmail。沒有 skill，Hermes 不知道 himalaya 要怎麼設；沒有 tool，它知道也做不了。
 </p>
 
-<div id="orgfd64e24" class="figure">
+<div id="org5e666b3" class="figure">
 <p><img src="img/hermes-gmail.svg" alt="hermes-gmail.svg" class="org-svg" width="100%" style="max-width:960px" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Hermes 收發信流程</p>
@@ -837,7 +847,7 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 <li>寄信這種對外的動作要謹慎，核准畫面不要習慣性選「永遠允許」。</li>
 </ul>
 
-<div id="org51e7416" class="figure">
+<div id="org9f5a5b8" class="figure">
 <p><img src="img/daily-mail-flow.svg" alt="daily-mail-flow.svg" class="org-svg" width="100%" style="max-width:960px" />
 </p>
 <p><span class="figure-number">Figure 5: </span>排程、檢查信件的流程</p>
@@ -850,13 +860,13 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </div>
 </div>
 </div>
-<div id="outline-container-orgc69d35f" class="outline-3">
-<h3 id="orgc69d35f">6. Skill</h3>
-<div class="outline-text-3" id="text-orgc69d35f">
+<div id="outline-container-org85f89bc" class="outline-3">
+<h3 id="org85f89bc">6. Skill</h3>
+<div class="outline-text-3" id="text-org85f89bc">
 </div>
-<div id="outline-container-org46b90d1" class="outline-4">
-<h4 id="org46b90d1">[實作]（講者示範，學員看；想做的可以跟著打）</h4>
-<div class="outline-text-4" id="text-org46b90d1">
+<div id="outline-container-orgfc670ce" class="outline-4">
+<h4 id="orgfc670ce">[實作]</h4>
+<div class="outline-text-4" id="text-orgfc670ce">
 <ol class="org-ol">
 <li><p>
 先讓它做一次（這一步講者在第 5 單元解說前就先丟出去跑，這裡直接看結果）
@@ -883,9 +893,9 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </ol>
 </div>
 </div>
-<div id="outline-container-org1ebf6f5" class="outline-4">
-<h4 id="org1ebf6f5">[解說]剛才存的是什麼</h4>
-<div class="outline-text-4" id="text-org1ebf6f5">
+<div id="outline-container-org4832150" class="outline-4">
+<h4 id="org4832150">[解說]剛才存的是什麼</h4>
+<div class="outline-text-4" id="text-org4832150">
 <ul class="org-ul">
 <li>第 1 步它是「現場摸索」：自己決定查哪個網站、怎麼找同學會、怎麼排版。第 2 步 <code>/learn</code> 把這次摸索出來的路寫成一份 SKILL.md；之後同一件事它就不用再摸索，直接照說明書走，這就是第 4 單元表格說的「沒有 skill，模型每次都要自己摸索怎麼用工具」。</li>
 <li><code>/skills</code> 看到的清單就是它的說明書櫃：內建的（himalaya、email-inbox-triage…）和剛存的放在一起。平常只帶一行簡介，用到才讀全文，所以存很多也不會拖慢它。</li>
@@ -895,9 +905,9 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </div>
 </div>
 </div>
-<div id="outline-container-org0d68ba2" class="outline-3">
-<h3 id="org0d68ba2">7. 安全提醒、Q&amp;A、回家作業</h3>
-<div class="outline-text-3" id="text-org0d68ba2">
+<div id="outline-container-org4ce989e" class="outline-3">
+<h3 id="org4ce989e">7. 安全提醒、Q&amp;A、回家作業</h3>
+<div class="outline-text-3" id="text-org4ce989e">
 <p>
 打開 Hermes 的「設定」（桌面版才有這個畫面；裝 CLI 版的老師請看投影，兩個設定都可以課後請 Hermes 幫你改）：
 </p>
@@ -917,29 +927,29 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </div>
 </div>
 </div>
-<div id="outline-container-orga6a595a" class="outline-2">
-<h2 id="orga6a595a">附錄：接上 Telegram（自行練習，不在課堂上做）</h2>
-<div class="outline-text-2" id="text-orga6a595a">
+<div id="outline-container-org12b7638" class="outline-2">
+<h2 id="org12b7638">附錄：接上 Telegram（自行練習，不在課堂上做）</h2>
+<div class="outline-text-2" id="text-org12b7638">
 <p>
 讓排程結果和提醒直接推到手機。筆電和 Hermes 都要開著。
 </p>
 
-<div id="org0c32c70" class="figure">
+<div id="org4e0c72b" class="figure">
 <p><img src="img/hermes-telegram.svg" alt="hermes-telegram.svg" class="org-svg" width="100%" style="max-width:960px" />
 </p>
 <p><span class="figure-number">Figure 6: </span>Hermes 主動連去 Telegram 拉訊息，筆電不用對外網址；bot 掛在你的帳號上，手機、電腦都看得到</p>
 </div>
 </div>
-<div id="outline-container-org2ef97bd" class="outline-3">
-<h3 id="org2ef97bd">連結Hermes與Telegram</h3>
-<div class="outline-text-3" id="text-org2ef97bd">
+<div id="outline-container-orgd31bf77" class="outline-3">
+<h3 id="orgd31bf77">連結Hermes與Telegram</h3>
+<div class="outline-text-3" id="text-orgd31bf77">
 <p>
 以下步驟會輪流在Hermes和Telegram間切換，建議在電腦上同時開啟Hermes和Telegram網頁版，手機上開Telegram app。兩邊都要登入同一個帳號。
 </p>
 </div>
-<div id="outline-container-org94bc776" class="outline-4">
-<h4 id="org94bc776">1. 請Hermes幫忙安裝啟動 gateway</h4>
-<div class="outline-text-4" id="text-org94bc776">
+<div id="outline-container-org0a3e888" class="outline-4">
+<h4 id="org0a3e888">1. 請Hermes幫忙安裝啟動 gateway</h4>
+<div class="outline-text-4" id="text-org0a3e888">
 <p>
 這裡的gateway是 Hermes 的背景程式，負責收發 Telegram 訊息。第一次用電腦上還沒有，請先安裝啟動。
 </p>
@@ -955,9 +965,9 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </ul>
 </div>
 </div>
-<div id="outline-container-orge6946f7" class="outline-4">
-<h4 id="orge6946f7">2. 到Telegram建立一個bot</h4>
-<div class="outline-text-4" id="text-orge6946f7">
+<div id="outline-container-orgd5abb37" class="outline-4">
+<h4 id="orgd5abb37">2. 到Telegram建立一個bot</h4>
+<div class="outline-text-4" id="text-orgd5abb37">
 <p>
 我們的目的是要「藉由和Telegram bot對話，讓 Hermes 收到訊息」。所以要先在 Telegram上建一個 bot。
 </p>
@@ -966,7 +976,7 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 在Telegram的搜尋欄輸入 <code>BotFather</code>，按 OPEN。這個bot是 Telegram 官方提供的，專門用來建立其他 bot。大概長這個樣子
 </p>
 
-<div id="org66ae66e" class="figure">
+<div id="org1054cda" class="figure">
 <p><img src="附錄：接上_Telegram（自行練習，不在課堂上做）/2026-10-22_11-33-07.png" alt="2026-10-22_11-33-07.png" width="400" />
 </p>
 </div></li>
@@ -979,9 +989,9 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </ol>
 </div>
 </div>
-<div id="outline-container-org5f2e4c4" class="outline-4">
-<h4 id="org5f2e4c4">3. 把 token 填進 Hermes</h4>
-<div class="outline-text-4" id="text-org5f2e4c4">
+<div id="outline-container-org7f63417" class="outline-4">
+<h4 id="org7f63417">3. 把 token 填進 Hermes</h4>
+<div class="outline-text-4" id="text-org7f63417">
 <ol class="org-ol">
 <li>回到 Hermes，桌面版：設定 → 訊息平台 → Telegram</li>
 <li>找到 Bot Token，把剛才複製的token貼上</li>
@@ -990,15 +1000,15 @@ Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 him
 </ol>
 </div>
 </div>
-<div id="outline-container-org3bde765" class="outline-4">
-<h4 id="org3bde765">4. 在 Telegram 上啟動Bot</h4>
-<div class="outline-text-4" id="text-org3bde765">
+<div id="outline-container-org0afce66" class="outline-4">
+<h4 id="org0afce66">4. 在 Telegram 上啟動Bot</h4>
+<div class="outline-text-4" id="text-org0afce66">
 <ol class="org-ol">
 <li>在Telegram的搜尋欄輸入 剛才設定的 ~username<sub>bot</sub>~，點兩下開啟對話框。</li>
 <li><p>
 按對話框裡的 <code>Start</code> 按鈕，Hermes 會回覆一組配對碼（pairing code），像這樣：
 </p>
-<pre class="example" id="orgc00ad20">
+<pre class="example" id="orga56c3fc">
 Hi! I don't recognize you yet, so I can't reply until the person running this bot approves you.
 
 Your pairing code: JHURE3GU (valid for 1 hour)
@@ -1008,24 +1018,24 @@ If you run this bot, open a terminal and run: hermes pairing approve telegram JH
 </ol>
 </div>
 </div>
-<div id="outline-container-org72e66b7" class="outline-4">
-<h4 id="org72e66b7">5. 讓Hermes認識你</h4>
-<div class="outline-text-4" id="text-org72e66b7">
+<div id="outline-container-orga8520c5" class="outline-4">
+<h4 id="orga8520c5">5. 讓Hermes認識你</h4>
+<div class="outline-text-4" id="text-orga8520c5">
 <p>
 接下來有兩種做法：
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org2edba29"></a>做法一：在Hermes桌面版操作<br />
-<div class="outline-text-5" id="text-org2edba29">
+<li><a id="orgf26c288"></a>做法一：在Hermes桌面版操作<br />
+<div class="outline-text-5" id="text-orgf26c288">
 <ol class="org-ol">
 <li>回到 Hermes，桌面版：設定 → 訊息平台 → Telegram</li>
 <li>找到上面的 <code>PENDING REQUESTS (1)~，按 ~Approve</code>，Hermes就會把你加進允許名單。你就可以在 Telegram 上和 Hermes 對話了。</li>
 </ol>
 </div>
 </li>
-<li><a id="org426c84d"></a>做法二：在終端機上操作<br />
-<div class="outline-text-5" id="text-org426c84d">
+<li><a id="org97a703b"></a>做法二：在終端機上操作<br />
+<div class="outline-text-5" id="text-org97a703b">
 <ol class="org-ol">
 <li>開 PowerShell 或終端機，打 <code>hermes pairing approve telegram 你的配對碼</code>，把剛才 Telegram 回的配對碼填進去。它會把你加進允許名單。</li>
 </ol>
@@ -1033,13 +1043,13 @@ If you run this bot, open a terminal and run: hermes pairing approve telegram JH
 </li>
 </ul>
 </div>
-<div id="outline-container-org2113c75" class="outline-4">
-<h4 id="org2113c75">6. 測試</h4>
-<div class="outline-text-4" id="text-org2113c75">
+<div id="outline-container-orge6448ce" class="outline-4">
+<h4 id="orge6448ce">6. 測試</h4>
+<div class="outline-text-4" id="text-orge6448ce">
 </div>
 <ul class="org-ul">
-<li><a id="org18baaa2"></a>桌面版 Telegram<br />
-<div class="outline-text-5" id="text-org18baaa2">
+<li><a id="org10b3bda"></a>桌面版 Telegram<br />
+<div class="outline-text-5" id="text-org10b3bda">
 <p>
 打開剛建好的 bot 對話框，再傳一句話確認它會回：
 </p>
@@ -1049,8 +1059,8 @@ If you run this bot, open a terminal and run: hermes pairing approve telegram JH
 </div>
 </div>
 </li>
-<li><a id="org34e23fe"></a>手機 Telegram<br />
-<div class="outline-text-5" id="text-org34e23fe">
+<li><a id="orgdbc7fcb"></a>手機 Telegram<br />
+<div class="outline-text-5" id="text-orgdbc7fcb">
 <p>
 打開 Telegram app，搜尋剛建好的 bot 對話框，再傳一句：
 </p>
@@ -1065,8 +1075,8 @@ If you run this bot, open a terminal and run: hermes pairing approve telegram JH
 </ul>
 </div>
 </li>
-<li><a id="orga6ef5e2"></a>接下來可以試：<br />
-<div class="outline-text-5" id="text-orga6ef5e2">
+<li><a id="orge23d248"></a>接下來可以試：<br />
+<div class="outline-text-5" id="text-orge23d248">
 <ul class="org-ul">
 <li><p>
 一個提醒：
@@ -1093,7 +1103,7 @@ If you run this bot, open a terminal and run: hermes pairing approve telegram JH
 <div id="postamble" class="status">
 <p class="date">Date: 2026-10-31（六）</p>
 <p class="author">Author: 顏永進</p>
-<p class="date">Created: 2026-10-24 六 16:50</p>
+<p class="date">Created: 2026-10-29 四 11:47</p>
 </div>
 </body>
 </html>
