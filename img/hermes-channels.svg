@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="arrw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7"/></marker>
+    <marker id="arrg" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#999"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.model{fill:#e6ecfb}.agent{fill:#e2f5e9}.ext{fill:#fbe9e7}
+    .dim{fill:#fafafa;stroke:#999;stroke-dasharray:5 3}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .col{font-weight:700;font-size:14px;fill:#555}
+    .tline2{stroke:#2a7;stroke-width:3;fill:none;marker-start:url(#arrw);marker-end:url(#arrw)}
+    .gline2{stroke:#999;stroke-width:1.6;fill:none;stroke-dasharray:5 4;marker-start:url(#arrg);marker-end:url(#arrg)}
+    .gline{stroke:#999;stroke-width:1.6;fill:none;stroke-dasharray:5 4;marker-end:url(#arrg)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <text x="24" y="30" class="title">同一個架構，兩邊都能換：左邊換「你在哪裡找它」，右邊換「它去碰什麼」</text>
+
+  <!-- column headers -->
+  <text x="130" y="68" text-anchor="middle" class="col">入口</text>
+  <text x="480" y="68" text-anchor="middle" class="col">中間不用動</text>
+  <text x="830" y="68" text-anchor="middle" class="col">服務</text>
+
+  <!-- left: entrances -->
+  <rect x="40" y="84" width="180" height="56" class="box user"/>
+  <text x="130" y="108" text-anchor="middle" class="lbl">Hermes 桌面版</text>
+  <text x="130" y="128" text-anchor="middle" class="small">今天用的：坐在電腦前打字</text>
+
+  <rect x="40" y="156" width="180" height="56" class="box dim"/>
+  <text x="130" y="180" text-anchor="middle" class="lbl">Telegram</text>
+  <text x="130" y="200" text-anchor="middle" class="small">手冊附錄：手機也能叫它做事</text>
+
+  <rect x="40" y="228" width="180" height="56" class="box dim"/>
+  <text x="130" y="252" text-anchor="middle" class="lbl">LINE</text>
+  <text x="130" y="272" text-anchor="middle" class="small">要自己架公開網址，難一些</text>
+
+  <rect x="40" y="300" width="180" height="56" class="box dim"/>
+  <text x="130" y="324" text-anchor="middle" class="lbl">Discord、Slack…</text>
+  <text x="130" y="344" text-anchor="middle" class="small">同一套做法</text>
+
+  <!-- center: Hermes -->
+  <rect x="370" y="84" width="220" height="44" class="box model"/>
+  <text x="480" y="112" text-anchor="middle" class="lbl">模型</text>
+  <line x1="480" y1="136" x2="480" y2="150" stroke="#555" stroke-width="1.8" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <rect x="370" y="158" width="220" height="198" class="box agent"/>
+  <text x="480" y="188" text-anchor="middle" class="lbl" font-size="20">Hermes</text>
+  <text x="480" y="216" text-anchor="middle" class="cap">工具、skill、記憶、SOUL.md、排程</text>
+  <text x="480" y="236" text-anchor="middle" class="cap">全部都在這裡</text>
+  <text x="480" y="270" text-anchor="middle" class="small">換入口：它認得你是同一個人，</text>
+  <text x="480" y="288" text-anchor="middle" class="small">記憶和排程都還在</text>
+  <text x="480" y="316" text-anchor="middle" class="small">換服務：多裝一個小程式或一份 skill，</text>
+  <text x="480" y="334" text-anchor="middle" class="small">它就多會一件事</text>
+
+  <!-- right: services -->
+  <rect x="726" y="84" width="204" height="56" class="box ext"/>
+  <text x="830" y="108" text-anchor="middle" class="lbl">Gmail</text>
+  <text x="830" y="128" text-anchor="middle" class="small">今天做的：經 himalaya 收發</text>
+
+  <rect x="726" y="156" width="204" height="56" class="box dim"/>
+  <text x="830" y="180" text-anchor="middle" class="lbl">電腦裡的檔案</text>
+  <text x="830" y="200" text-anchor="middle" class="small">第 3 單元：csv、圖表、Excel</text>
+
+  <rect x="726" y="228" width="204" height="56" class="box dim"/>
+  <text x="830" y="252" text-anchor="middle" class="lbl">網站</text>
+  <text x="830" y="272" text-anchor="middle" class="small">第 6 單元：查資料、整理報告</text>
+
+  <rect x="726" y="300" width="204" height="56" class="box dim"/>
+  <text x="830" y="324" text-anchor="middle" class="lbl">Google 日曆、雲端硬碟</text>
+  <text x="830" y="344" text-anchor="middle" class="small">要 Google Cloud OAuth，見講義</text>
+
+  <!-- arrows left -->
+  <path d="M228,112 C300,112 300,200 362,200" class="tline2"/>
+  <path d="M228,184 C300,184 300,220 362,220" class="gline2"/>
+  <path d="M228,256 C300,256 300,240 362,240" class="gline2"/>
+  <path d="M228,328 C300,328 300,260 362,260" class="gline2"/>
+  <!-- arrows right -->
+  <path d="M598,200 C660,200 660,112 718,112" class="tline2"/>
+  <path d="M598,220 C660,220 660,184 718,184" class="gline"/>
+  <path d="M598,240 C660,240 660,256 718,256" class="gline"/>
+  <path d="M598,260 C660,260 660,328 718,328" class="gline"/>
+
+  <!-- note -->
+  <rect x="24" y="378" width="912" height="48" class="note"/>
+  <text x="480" y="398" text-anchor="middle" class="cap">今天走的是粗線那條：桌面版 → Hermes → Gmail。換成手機上的 Telegram 叫它整理信箱、或讓它順手把會議寫進日曆，中間的 Hermes 一行都不用改。</text>
+  <text x="480" y="416" text-anchor="middle" class="small">回家先從附錄的 Telegram 開始，接上之後在手機上打「今天有什麼重要的信」試試看。</text>
+</svg>
